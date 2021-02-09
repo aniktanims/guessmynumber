@@ -83,7 +83,7 @@ input {
   background-color: black;
   padding: 10px;
   text-transform: uppercase;
-  color: coral;
+  color: rgb(255, 223, 80);
 }
 .js {
   align-items: center;
