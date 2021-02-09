@@ -3,90 +3,85 @@
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.container{
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-    max-width: 800px;
-}
-.program {
-  margin: 0 auto;
-  
-  margin-top: 10%;
-  display: flex;
-  flex-wrap: wrap;
 
-  min-width: 400px
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.program h2 {
-  padding: 6px;
-  font-size: 3rem;
-}
-.program p {
-  width: 100%;
-  padding: 10px ;
-  text-align: center;
-  font-size: 1.2rem;
-  text-align: center;
-}
-label {
-  outline: none;
-
-  text-align: center;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  flex: 1;
-  min-width: 500px;
-  padding: 10px;
-}
-.input {
+.container {
+  min-width: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-input {
-  width: 100%;
-  outline: none;
-  border: 1px solid rgb(8, 48, 100);
- margin: 5px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  margin: 10px auto;
   padding: 10px;
 }
 
-#btn {
-  margin: 10px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  width: 100%;
-  background-color: yellowgreen;
+.container .program {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .program h2,
+.container .program h3,
+.container .program p {
+  text-align: center;
+}
+
+.container .program h2 {
   font-size: 2rem;
-  font-size: bold;
-  padding: 10px;
 }
-#btn:hover {
+
+.container .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .input input {
+  padding: 6px;
+  margin: 5px;
+}
+
+.container #btn {
+  margin: 5px;
+  padding: 6px;
   cursor: pointer;
-  background-color: rgb(115, 155, 35);
-}
-#result {
-  text-align: center;
+  background-color: #00a6fb;
+  border: none;
+  outline: none;
   color: white;
+}
+
+.container #btn:hover {
+  background-color: #0582ca;
+}
+
+.container #result {
+  margin-bottom: 5px;
   background-color: black;
-  padding: 10px;
-  text-transform: uppercase;
-  color: rgb(255, 223, 80);
+  color: white;
 }
-.js {
-  align-items: center;
-}
+/*# sourceMappingURL=style.css.map */
