@@ -31,7 +31,7 @@ body {
 
 .card {
   background-color: black;
-  margin: 30px auto 20px auto;
+  margin: 100px auto 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
