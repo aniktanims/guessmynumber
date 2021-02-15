@@ -50,6 +50,12 @@ body {
   border-radius: 22px;
 }
 
+@media screen and (max-width: 700px) {
+  .card {
+    margin: 10px auto 20px auto;
+  }
+}
+
 .topwrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,6 +177,10 @@ section .title {
 .author {
   font-size: 14px;
   color: #c4c4c4;
+}
+
+.authorright {
+  margin: 0 0 20px 0;
 }
 
 .authorright a {

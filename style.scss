@@ -37,6 +37,11 @@ $hover3: #7c1d58;
   box-shadow: 0px 0px 94px rgba(36, 206, 243, 0.88);
   border-radius: 22px;
 }
+@media screen and (max-width: 700px) {
+  .card {
+    margin: 10px auto 20px auto;
+  }
+}
 .topwrapper {
   display: flex;
   justify-content: space-between;
@@ -136,6 +141,7 @@ section {
   a:hover {
     color: rgb(113, 164, 240);
   }
+  margin: 0 0 20px 0;
 }
 /* Hover*/
 
