@@ -12,10 +12,12 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".what").textContent = secretNumber;
   } else if (inputNumber < secretNumber) {
     document.querySelector(".guess").textContent = "🔻↙ Too Low";
+    document.querySelector(".card").style.backgroundColor = "#452161";
     score = -1;
     document.querySelector(".score").textContent = score;
   } else if (inputNumber > secretNumber) {
     document.querySelector(".guess").textContent = "↗ Too High🙃";
+    document.querySelector(".card").style.backgroundColor = "#7c1d58";
     score = -1;
     document.querySelector(".score").textContent = score;
   }
