@@ -22,11 +22,11 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".highscore").textContent = highscore;
     }
   } else if (inputNumber != secretNumber) {
-    if (score > 1) {
+    if (score > 4) {
       displayMessage(
         inputNumber > secretNumber ? "↗ Too High🙃" : "🔻↙ Too Low"
       );
-      score--;
+      score -= 4;
       document.querySelector(".score").textContent = score;
     } else {
       displayMessage("Game Over! 🦆");
