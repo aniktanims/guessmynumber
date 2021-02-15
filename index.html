@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Score Calculator</title>
-</head>
-<body>
-       
-        <div class="container">
-            <div class="program">
-                <h2 >Score Calculator</h2>
-                <h3>It's not a simple score calculator.It has several options.</h3>
-                <p> 
-                   
-                   Note: only wins if it has a higher score than the other team, and the same time a
-                   score of at least 100 points. Minimum score also applies to a draw! So a draw only happens when
-                   both teams have the same score and both have a score greater or equal 100
-                   points. Otherwise, no team wins the trophy!
-                    </p>
-            
-                    <div class="input">
-                        <label for="">Team 1: 
-                            <input placeholder="Example: 210" type="number" id="input1">
-                            <label for="">  Team 2 
-                                <input placeholder="Example: 160" type="number" id="input2"></label> </label>
-                           
-                    </div>
-                        <button type="submit" id="btn">Calculate - Who Will Win!</button>
-                     <p id="result" > </p>
-                     <p style="text-align: center; font-size: .9rem; text-transform: uppercase; ">Developed by Mostofa Tanim Anik, JavaScript Project 01</p>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="body bg">
+    <div class="container">
+      <div class="card bg">
+        <div class="topwrapper">
+          <div class="top_left">
+            <p>Again</p>
+          </div>
+          <div class="top_right">
+            <p>Score: <span class="score"></span></p>
+            <p>🥇Highscore: <span class="highscore">0</span></p>
+          </div>
         </div>
+        <!-- Top End Here! -->
+        <section>
+          <h2 class="title">Guess My Number!</h2>
+          <p>(Between 1 and 20)</p>
+          <div class="box">
+            <h2 class="what">?</h2>
+          </div>
+          <div class="inputbox">
+            <input
+              placeholder="input 0 to 20"
+              type="number"
+              class="input_number"
+              max="20"
+              min="0"
+              maxlength="2"
+            />
+            <p class="guess">Start guessing!</p>
+          </div>
+          <div>
+            <p class="btn check">Check</p>
+          </div>
+          <p class="author">💻 JavaScript Game | Dev : Mostofa Tanim Anik</p>
+        </section>
+      </div>
+      <div class="authorright">
+        <p>This is JavaScript Project 02 | Guess Game!</p>
+        <p>⭕UNDER DEVELEOPMENT⭕</p>
+        <p>Author: Mostofa Tanim Anik</p>
+        <p>
+          <a href="http://facebook.com/aniktanims" target="_blank"
+            >🌍 Facebook</a
+          >
+        </p>
+      </div>
+    </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

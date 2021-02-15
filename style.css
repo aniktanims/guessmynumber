@@ -1,87 +1,186 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
 * {
-  font-family: "Roboto", sans-serif;
-  padding: 0;
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(107.81deg, #4075c5 9.15%, #3e0f63 93.09%);
 }
 
 .container {
-  min-width: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 800px;
-  margin: 10px auto;
-  padding: 10px;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1000px;
 }
 
-.container .program {
+.card {
+  background-color: black;
+  margin: 100px auto 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
+  min-width: 360px;
+  max-width: 360px;
+  height: 648px;
+  border: 1px solid #0f8df5;
+  -webkit-box-shadow: 0px 0px 94px rgba(36, 206, 243, 0.88);
+          box-shadow: 0px 0px 94px rgba(36, 206, 243, 0.88);
+  border-radius: 22px;
 }
 
-.container .program h2,
-.container .program h3,
-.container .program p {
-  text-align: center;
-}
-
-.container .program h2 {
-  font-size: 2rem;
-}
-
-.container .input {
+.topwrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topwrapper .top_left p {
+  width: 99px;
+  padding: 10px;
+  text-align: center;
+  background-color: #8c57b5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.topwrapper .top_left p:hover {
+  background: #7533a9;
+}
+
+.topwrapper .top_right {
+  text-align: left;
+}
+
+.topwrapper .top_right :nth-child(2) {
+  color: #8c57b5;
+}
+
+section,
+.title,
+p {
+  text-align: center;
+}
+
+.box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 1px solid #c4c4c4;
+  width: 200px;
+  border-radius: 5px;
+  margin: 10px auto;
 }
 
-.container .input input {
-  padding: 6px;
-  margin: 5px;
+.box h2 {
+  font-size: 105.939px;
 }
 
-.container #btn {
-  margin: 5px;
-  padding: 6px;
-  cursor: pointer;
-  background-color: #00a6fb;
-  border: none;
-  outline: none;
-  color: white;
+.inputbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.container #btn:hover {
-  background-color: #0582ca;
+.inputbox .input_number {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 10px 0;
+  width: 223px;
+  color: black;
+  font-weight: bold;
+  height: 55px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
 }
 
-.container #result {
+.guess {
+  font-size: 15px;
   margin-bottom: 5px;
-  background-color: black;
-  color: white;
 }
+
+.check {
+  margin: 8px 0 15px 0;
+  width: 100%;
+  background: #6fb557;
+  font-size: 44.6441px;
+  line-height: 57px;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.check:hover {
+  background: #3e971f;
+}
+
+section {
+  margin-top: 20px;
+}
+
+section .title {
+  position: relative;
+  margin: 10px 0;
+  font-size: 40px;
+  line-height: 57px;
+  color: #ffffff;
+}
+
+.author {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+.authorright a {
+  color: #4184e7;
+  text-decoration: none;
+}
+
+.authorright a:hover {
+  color: #71a4f0;
+}
+
+/* Hover*/
 /*# sourceMappingURL=style.css.map */
