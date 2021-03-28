@@ -8,11 +8,17 @@ let secretNumber = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
 let highscore = 0;
 document.querySelector(".score").textContent = score;
+const timeoutMSG = function () {
+  setTimeout(() => {
+    displayMessage("Start guessing!");
+  }, 2000);
+};
 
 document.querySelector(".check").addEventListener("click", function () {
   const inputNumber = Number(document.querySelector(".input_number").value);
   if (!inputNumber) {
     displayMessage("⛔ No Input Number!");
+    timeoutMSG();
   } else if (inputNumber === secretNumber) {
     displayMessage("🎉 Correct Number!");
     document.querySelector(".card").style.backgroundColor = "#3e971f";
@@ -26,6 +32,7 @@ document.querySelector(".check").addEventListener("click", function () {
       displayMessage(
         inputNumber > secretNumber ? "↗ Too High🙃" : "🔻↙ Too Low"
       );
+      timeoutMSG();
       score -= 4;
       document.querySelector(".score").textContent = score;
     } else {
